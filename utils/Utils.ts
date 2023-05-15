@@ -49,6 +49,12 @@ export const fileMove = async (app: App, settingFolder: string, fileFullName: st
 	if (newPath === file.path) {
 		return;
 	}
+
+  const regex = new RegExp(`${normalizePath(settingFolder)}/.*/${normalizePath(fileFullName)}`);
+  if (regex.test(file.path)) {
+    new Notice('[Auto Note Mover v2] The destination folder is contained within the current folder.');
+    return;
+  }
 	// Move file
 	await app.fileManager.renameFile(file, newPath);
 	console.log(`[Auto Note Mover] Moved the note "${fileFullName}" to the "${settingFolder}".`);

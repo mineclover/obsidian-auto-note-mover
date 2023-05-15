@@ -1,10 +1,10 @@
 {
-	"id": "auto-note-mover",
-	"name": "Auto Note Mover",
-	"version": "1.2.0",
-	"minAppVersion": "0.12.0",
-	"description": "Auto Note Mover will automatically move the active notes to their respective folders according to the rules.",
-	"author": "faru",
-	"authorUrl": "https://github.com/farux/",
-	"isDesktopOnly": false
+  "id": "auto-note-area",
+  "name": "Auto Note Mover v2",
+  "version": "2.1.0",
+  "minAppVersion": "2.1.0",
+  "description": "Added functionality in plug-in \"Auto Note Mover\" that does not work when file path matching",
+  "author": "softer",
+  "authorUrl": "https://github.com/mineclover/",
+  "isDesktopOnly": false
 }
